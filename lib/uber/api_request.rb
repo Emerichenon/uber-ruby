@@ -17,7 +17,8 @@ module Uber
 
     # @return [Hash]
     def perform
-      @client.send(@request_method, @path, @options)
+      result = @client.send(@request_method, @path, @options)
+      raise ""
     end
 
     # @param klass [Class]
